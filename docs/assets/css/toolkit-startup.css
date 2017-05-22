@@ -8348,11 +8348,11 @@ h1.block-title {
   color: #ffffff;
 }
 .navbar-transparent .navbar-nav > li > a {
-  color: #ffffff;
+  color: black;
 }
 .navbar-transparent .navbar-nav > li > a:hover,
 .navbar-transparent .navbar-nav > li > a:focus {
-  color: #e6e6e6;
+  color: ;
   background-color: transparent;
 }
 .navbar-transparent .navbar-nav > .active > a,
