@@ -87,17 +87,17 @@
       </div>
       <div class="navbar-collapse collapse text-uppercase">
         <ul class="nav navbar-nav navbar-right">
-         <li>
-          <a href="#">Home</a>
+<!--          <li>
+          <a id="home-link">Home</a>
+        </li> -->
+        <li>
+          <a id="about-link">About</a>
         </li>
         <li>
-          <a href="#about-section">About</a>
+          <a id="locations-link">Locations</a>
         </li>
         <li>
-          <a href="#locations-section">Locations</a>
-        </li>
-        <li>
-          <a href="#contact-section">Contact</a>
+          <a id="contact-link">Contact</a>
         </li>
       </ul>
     </div><!--/.nav-collapse -->
@@ -111,7 +111,7 @@
       <div class="col-sm-10 col-md-6">
         <h1 class="block-title m-b-sm">Working spaces, redefined.</h1>
         <p class="lead m-b-md">Find beautiful and conducive working spaces</p>
-        <button class="btn btn-pill btn-danger btn-lg">Try it now</button>
+        <button id="try-it-now" class="btn btn-pill btn-danger btn-lg">Try it now</button>
       </div>
     </div>
   </div>
@@ -204,17 +204,15 @@
   <div class="row">
     <div class="col-sm-6 m-b-md">
       <ul class="list-unstyled list-spaced">
-        <li class="m-b"><h6 class="text-uppercase">Contact</h6></li>
-        <li class="">
-         We’ve been working on YourSpace for over 5 months and are super proud of what we’ve created. If you’d like to learn more, or are interested in a job, contact us anytime at <a href="mailto: hello@yourspace.com">hello@yourspace.com</a>.
-       </li>
+        <li class=""><h4 class="text-uppercase">Contact</h4></li>
+         <p style="font-size: 18px;">We’ve been working on YourSpace for over 5 months and are super proud of what we’ve created. If you’d like to learn more, or are interested in a job, contact us anytime at <a href="mailto: hello@yourspace.com">hello@yourspace.com</a>.</p>
      </ul>
    </div>
     <div class="col-sm-5 m-b-md col-sm-offset-1">
       <ul class="list-unstyled list-spaced">
-        <li class="m-b"><h6 class="text-uppercase text-center">iOS App</h6></li>
-        <div class="col-sm-6"><img src="img/app-store.svg"></div>
-        <div class="col-sm-6"><li class="">Check us out by downloading our app from the App Store!</div>
+        <li class="m-b"><h4 class="text-uppercase text-center">iOS App</h4></li>
+        <div class="col-sm-6 col-md-5 block-xs-middle"><img src="img/app-store.svg"></div>
+        <div class="col-sm-6"><p style="font-size: 18px;">Check us out by downloading our app from the App Store!</p></div>
        </li>
      </ul>
    </div>
@@ -228,6 +226,38 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/toolkit.js"></script>
 <script src="js/application.js"></script>
+<script type="text/javascript">
+  $('#try-it-now').click(function() {
+        $('html,body').animate({
+      scrollTop: $('#contact-section').offset().top
+    }, 'slow');
+  });
+
+  // $('#home-link').click(function() {
+  //   $('html,body').animate({
+  //     scrollTop: $('#').offset().top
+  //   }, 'slow');
+  // });
+
+  $('#about-link').click(function() {
+    $('html,body').animate({
+      scrollTop: $('#about-section').offset().top
+    }, 'slow');
+  });
+
+  $('#locations-link').click(function() {
+    $('html,body').animate({
+      scrollTop: $('#locations-section').offset().top
+    }, 'slow');
+  });
+
+  $('#contact-link').click(function() {
+    $('html,body').animate({
+      scrollTop: $('#contact-section').offset().top
+    }, 'slow');
+  });
+
+</script>
 </body>
 </html>
 
