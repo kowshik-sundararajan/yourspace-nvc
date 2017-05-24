@@ -5,6 +5,19 @@
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
 }*/
 
+#about-section {
+  padding: 50px;
+}
+
+#arrow {
+    border-right:30px solid black;
+    border-bottom:30px solid black;
+    width:100px;
+    height:100px;
+    transform: rotate(-45deg);
+    margin-top:40px;
+}
+
 /* navbar */
 .app-navbar {
   font-weight: 500;

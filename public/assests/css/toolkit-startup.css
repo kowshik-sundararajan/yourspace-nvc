@@ -4615,6 +4615,7 @@ button.list-group-item-danger.active:focus {
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
+  padding: 10px 0;
   font-size: 17px;
   color: inherit;
 }
@@ -8041,7 +8042,7 @@ fieldset[disabled] .btn-danger-outline.active {
 .block {
   position: relative;
   width: 100%;
-  padding: 60px 30px;
+  padding: 50px 30px;
   color: inherit;
   background-color: #ffffff;
   background-position: center;
@@ -8321,9 +8322,9 @@ h1.block-title {
   }
 }
 @media screen and (min-width: 768px) {
-  .block {
-    padding: 100px 0;
-  }
+/*  .block {
+    padding: 0 0;
+  }*/
   .block:not(.block-secondary) .lead {
     font-size: 21px;
   }
