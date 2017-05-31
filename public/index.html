@@ -157,33 +157,53 @@
     <div class="row">
       <div class="m-t">
         <div class="row" style="color:black;">
-          <div class="col-md-4">
-            <div class="panel panel-danger panel-profile">
-              <div class="panel-heading">Drury Lane<br><span style="border: 1px solid black; border-radius: 4px; padding: 3px; font-size: 80%; margin-top: 10px;">Cafe</span></div>
-              <div class="panel-body text-center">
-                <img class="panel-profile-img"  width="100%" height="150%" src="img/drury-lane.jpg">
-              </div>
-              <div class="panel-title">94 Tanjong Pagar Road<br>Co-working hours: 7pm - 8am<br>Mondays to Fridays</div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="panel panel-danger panel-profile">
-              <div class="panel-heading">Club House Cafe<br><span style="border: 1px solid black; border-radius: 4px; padding: 3px; font-size: 80%; margin-top: 10px;">Cafe</span></div>
-              <div class="panel-body text-center">
-                <img class="panel-profile-img" width="100%" src="img/cafe-open-house.jpg">
-              </div>
-              <div class="panel-title">20 Cross Street<br>Co-working hours: 9pm - 10am<br>Mondays to Saturdays</div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="panel panel-danger panel-profile">
-              <div class="panel-heading">Hopscotch by Mixes from Mars<br><span style="border: 1px solid black; border-radius: 4px; padding: 3px; font-size: 80%; margin-top: 10px;">Bar</span></div>
-              <div class="panel-body text-center">
-                <img class="panel-profile-img" width="100%" src="img/hopscotch.jpeg">
-              </div>
-              <div class="panel-title">28 Maxwell Road<br>Co-working hours: 8am - 4pm<br>Mondays to Sundays</div>
-            </div>
-          </div>
+	        <div class="slick-slider">
+	          <div class="col-md-4">
+	            <div class="panel panel-danger panel-profile">
+	              <div class="panel-heading">Drury Lane<br><span style="border: 1px solid black; border-radius: 4px; padding: 3px; font-size: 80%; margin-top: 10px;">Cafe</span></div>
+	              <div class="panel-body text-center">
+	                <img class="panel-profile-img"  width="100%" height="150%" src="img/drury-lane.jpg">
+	              </div>
+	              <div class="panel-title">94 Tanjong Pagar Road<br>Co-working hours: 7pm - 8am<br>Mondays to Fridays</div>
+	            </div>
+	          </div>
+	          <div class="col-md-4">
+	            <div class="panel panel-danger panel-profile">
+	              <div class="panel-heading">Club House Cafe<br><span style="border: 1px solid black; border-radius: 4px; padding: 3px; font-size: 80%; margin-top: 10px;">Cafe</span></div>
+	              <div class="panel-body text-center">
+	                <img class="panel-profile-img" width="100%" src="img/cafe-open-house.jpg">
+	              </div>
+	              <div class="panel-title">20 Cross Street<br>Co-working hours: 9pm - 10am<br>Mondays to Saturdays</div>
+	            </div>
+	          </div>
+	          <div class="col-md-4">
+	            <div class="panel panel-danger panel-profile">
+	              <div class="panel-heading">Hopscotch by Mixes from Mars<br><span style="border: 1px solid black; border-radius: 4px; padding: 3px; font-size: 80%; margin-top: 10px;">Bar</span></div>
+	              <div class="panel-body text-center">
+	                <img class="panel-profile-img" width="100%" src="img/hopscotch.jpeg">
+	              </div>
+	              <div class="panel-title">28 Maxwell Road<br>Co-working hours: 8am - 4pm<br>Mondays to Sundays</div>
+	            </div>
+	          </div>
+	          <div class="col-md-4">
+	            <div class="panel panel-danger panel-profile">
+	              <div class="panel-heading">Whisk & Paddle<br><span style="border: 1px solid black; border-radius: 4px; padding: 3px; font-size: 80%; margin-top: 10px;">Cafe</span></div>
+	              <div class="panel-body text-center">
+	                <img class="panel-profile-img"  width="100%" height="150%" src="http://i.hungrygowhere.com/rnr/food/192247/b8eb0200/ed7d675b229ead37fe0f5ee9a820a501_1428110605.jpg">
+	              </div>
+	              <div class="panel-title">10 Tebing Lane, Singapore 828836<br>Co-working hours: 3:30pm - 10:30pm<br>Mondays to Fridays</div>
+	            </div>
+	          </div>
+	          <div class="col-md-4">
+	            <div class="panel panel-danger panel-profile">
+	              <div class="panel-heading">Riders<br><span style="border: 1px solid black; border-radius: 4px; padding: 3px; font-size: 80%; margin-top: 10px;">Cafe</span></div>
+	              <div class="panel-body text-center">
+	                <img class="panel-profile-img"  width="100%" height="150%" src="https://snapawayy.files.wordpress.com/2013/03/i49a4546.jpg">
+	              </div>
+	              <div class="panel-title">51 Fairways Dr, Singapore 286965<br>Co-working hours: 7pm - 8am<br>Mondays to Fridays</div>
+	            </div>
+	          </div>
+	        </div>
         </div>
       </div>
     </div>
@@ -252,6 +272,41 @@
       scrollTop: $('#contact-section').offset().top
     }, 'slow');
   });
+
+  $('.slick-slider').slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: '<i class="material-icons">keyboard_arrow_left</i>',
+        nextArrow: '<i class="material-icons">keyboard_arrow_right</i>',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: false,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }
+        ]
+    });
 
 </script>
 </body>
